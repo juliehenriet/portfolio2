@@ -8,19 +8,23 @@ body {
 #loader-wrapper {
     position: fixed;
     top: 0;
-    width: 51%;
     height: 100%;
     width: 100%;
     background-color: black;
     z-index: 1000;
+    margin: auto;
+    text-align: center;
 }
 
-#loader-wrapper{
-    background-image: url('../img/owl.png'); 
-    background-position: center;
-    background-size: 50%;
-    background-repeat: no-repeat;
+
+#loader-wrapper>img {
+   
+    margin-top:10%;
+
+    
 }
+
+
 /* #loader-wrapper .loader-section.section-left {
     left: 0;
 }
