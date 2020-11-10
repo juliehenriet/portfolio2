@@ -6,46 +6,20 @@ main_article.style.display = "none";
 
 
 
-// function loader_setTime() {
-
-
-//     const p = document.createElement('p');
-//     p.classList.add('loading-text')
-//     loader.appendChild(p);
-
-//     p.innerText = 'Loading ...'
-//     const p_text = document.querySelectorAll('loading-text');
-//     //------------------p retourne un tableau ------------//
-
-//     if (owl.style.opacity <= 1) {
-//         setTimeout(() => {
-//             owl.style.opacity = 1;
-//         }, 500);
-
-//         setInterval(() => {
-
-//             for (let a = 0; a <= p_text.length; a++) {
-//                 // console.log(p_text.length)
-//             }
-
-//         }, 100);
-
-//     }
-
-
-// }
-// loader_setTime();
-
-
 //     //-------------------je veux que mon texte s'écrit tout seul dans un petit laps de temps -----------//
 //     //--------------------------je créer mon texte et je l'ajoute à mon loader-------------------------//
+
 
 const p = document.createElement('p');
 p.classList.add('loading-text');
 loader.appendChild(p);
+let count = 0;
 // p.innerText = 'Loading ...';
-const p_text = "loading...";
+const p_text = "loading ...";
 
+const counter = document.createElement('p');
+counter.classList.add('count');
+loader.appendChild(counter);
 //------------------p_text retourne un tableau--------------//
 
 const words = p_text.split('');
@@ -53,14 +27,31 @@ const words = p_text.split('');
 //------------------on parcours le tableau pour avoir chaque lettre--------------//
 
 function writte() {
-
-
-    setInterval(()=>{
-        if(words.length>0){
+   
+    setInterval(() => {
+        if (words.length > 0) {
             p.innerText += words.shift();
         }
-    },70);
-  
+
+        let opacity = 0;
+
+        if (opacity <= 1) {
+            opacity +=0.1;
+            owl.style.opacity = opacity;
+        }
+    }, 70);
+
+    setInterval(() => {
+        
+        if (count <= 99) {
+            ++count;
+            console.log(count)
+            counter.innerText = count + "%";
+           
+        }
+
+    
+    }, 20);
 
 }
 writte();
