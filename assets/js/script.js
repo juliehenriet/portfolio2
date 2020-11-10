@@ -1,3 +1,5 @@
+//------------------pour le loader--------------//
+
 const loader = document.getElementById("loader-wrapper");
 const owl = document.getElementById("owl");
 const main_article = document.getElementById("main-article");
@@ -22,28 +24,40 @@ const words = p_text.split('');
 //------------------on parcours le tableau pour avoir chaque lettre--------------//
 
 function writte() {
-   
+
     setInterval(() => {
         if (words.length > 0) {
             p.innerText += words.shift();
         }
-            owl.style.opacity = 1;
-           
-
+        owl.style.opacity = 1;
     }, 70);
 
+    // if (p == "...") {
     setInterval(() => {
-        
+
         if (count <= 99) {
             count++;
             counter.innerText = " " + count + "%";
-           
+
         }
 
-    
     }, 10);
-
+    // }
 }
 writte();
 
 main_article.style.display = "none";
+
+//------------------quand la page est complètement charger--------------//
+
+
+function showContent() {
+
+    window.addEventListener('load', function () {
+        loader.style.display = "none";
+        main_article.style.display = "block";
+    });
+
+}
+
+showContent();

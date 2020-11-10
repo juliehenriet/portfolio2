@@ -7,7 +7,8 @@
     </div>
 
     <article class="main-article" id ="main-article">
-        <!-- <h1>Coucou</h1> -->
+         <h1>Coucou</h1> 
+         <img src="./assets/img/lille.jpg">
     </article>
 
 </main>
