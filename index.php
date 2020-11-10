@@ -8,7 +8,7 @@
 
     <article class="main-article" id ="main-article">
          <h1>Coucou</h1> 
-         <img src="./assets/img/lille.jpg">
+         <img src="./assets/img/lille.jpg" class="home_background" alt="la place de lille">
     </article>
 
 </main>
