@@ -18,14 +18,16 @@ body {
 
 
 #loader-wrapper>img {
-
     margin-top: 10%;
     opacity: 0;
-    transition: 0.4s;
+    transition: 1s;
 }
 
-#loader-wrapper>p {
-
+.container_loader>p {
     color: white;
+}
 
+.container_loader{
+    display: flex;
+    justify-content: center;
 }
