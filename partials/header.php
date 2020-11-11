@@ -17,6 +17,16 @@
                 <div class="burger_line"></div>
                 <div class="burger_line"></div>
             </div>
+
+            <div id="nav_container">
+                <ul id="nav_ul">
+                    <li class="li_nav"><a href="index.php">Home</a></li>
+                    <li class="li_nav"><a href="realisation.php">Réalisation</a></li>
+                    <li class="li_nav"><a href="formation.php">Formation</a></li>
+                    <li class="li_nav"><a href="expérience.php">Expérience</a></li>
+                    <li class="li_nav"><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 

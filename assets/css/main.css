@@ -39,8 +39,8 @@ header {
     width: 100%;
     background-color: rgba(47, 53, 66, 0.8);
     position: absolute;
-    opacity: 0.5;
-
+    opacity: 0.8;
+    box-shadow: 0 2px 2px  rgba(47, 53, 66, 0.2);;
 }
 
 #burger {
@@ -52,30 +52,49 @@ header {
     border-radius: 5px;
     margin-left: 90%;
     margin-top: 5px;
+    cursor: pointer;
+
 }
 
 #nav-bar {
-
     width: 100%;
     height: auto;
-    ;
+
 }
 
 .burger_line {
     background-color: white;
     height: 5px;
     width: 30px;
-   margin-top:5px;
-   margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
 }
 
-/*-------------------------content---------------------*/
+
+#nav_container{
+    margin:auto;
+    text-align: center;
+    height: 100vh;
+    background-color: rgba(47, 53, 66, 0.8);
+
+}
+
+.li_nav{
+    list-style: none;
+}
+/*-------------------------content home---------------------*/
 
 main {
     background-color: #57606f;
     height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#home_background{
+    background-image: url('../img/lille.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
