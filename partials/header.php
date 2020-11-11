@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +11,17 @@
 <body>
     <header>
         <nav id="nav-bar">
-            <div  id="burger">
-                <div class="burger_line"></div>
-                <div class="burger_line"></div>
-                <div class="burger_line"></div>
-            </div>
+
+            <input type="checkbox" id="burger">
+            <label for ="burger" id ="burger_background">
+                <div class="line top"></div>
+                <div class="line middle"></div>
+                <div class="line bottom"></div>
+            </label>
 
             <div id="nav_container">
+
+
                 <ul id="nav_ul">
                     <li class="li_nav"><a href="index.php">Home</a></li>
                     <li class="li_nav"><a href="realisation.php">Réalisation</a></li>
@@ -29,4 +32,3 @@
             </div>
         </nav>
     </header>
-
