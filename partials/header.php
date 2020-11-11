@@ -10,4 +10,13 @@
 </head>
 
 <body>
+    <header>
+        <nav id="nav-bar">
+            <div  id="burger">
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+                <div class="burger_line"></div>
+            </div>
+        </nav>
+    </header>
 
