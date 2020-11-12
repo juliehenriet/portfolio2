@@ -6,7 +6,7 @@
     </div>
 
     <article class="main-article" id ="main-article">
-        
+        <img src="./assets/img/lille.jpg" class ="home zoom">
     </article>
 
 </main>

@@ -21,7 +21,6 @@
 
             <div id="nav_container">
 
-
                 <ul id="nav_ul">
                     <li class="li_nav"><a href="index.php">Home</a></li>
                     <li class="li_nav"><a href="realisation.php">Réalisation</a></li>

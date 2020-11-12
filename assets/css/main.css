@@ -3,7 +3,7 @@ body {
     padding: 0;
     position: relative;
     box-sizing: border-box;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 a {
@@ -44,39 +44,40 @@ a {
 header {
     height: 70px;
     width: 100%;
-    background-color: rgba(47, 53, 66, 0.8);
+    background-color: rgba(47, 53, 66, 0.5);
     position: absolute;
     box-shadow: 0 2px 2px rgba(47, 53, 66, 0.2);
-    
+    z-index: 2;
+
 }
 
 label {
-    top: 10px;
+    margin-top: 5px;
     display: inline-block;
     width: 40px;
-    background-color: black;
+    background-color: #ff6b81;
     cursor: pointer;
-    padding:10px;
+    padding: 10px;
     border-radius: 5px;
     position: absolute;
-    margin-left: 80%;
+    margin-left: 90%;
     z-index: 3;
-  }
+}
 
 #nav-bar {
     width: 100%;
     height: auto;
-  
+
 }
 
 .line {
     background-color: white;
     height: 5px;
     border-radius: 5px;
-    margin-top: 5px; 
+    margin-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     transition: 0.4s;
 }
 
@@ -90,7 +91,7 @@ input[type="checkbox"] {
     -moz-transform: translateY(0px) rotateZ(45deg);
     -ms-transform: translateY(0px) rotateZ(45deg);
     -o-transform: translateY(0px) rotateZ(45deg);
-    transform: translateY(0px) rotateZ(45deg);
+    transform: translateY(5px) rotateZ(45deg);
 }
 
 #burger:checked~label .bottom {
@@ -114,10 +115,12 @@ input[type="checkbox"] {
     transform: translateX(100%);
     transition: 0.4s;
 }
-#burger:checked~#nav_container{
+
+#burger:checked~#nav_container {
     transform: translateX(0);
     transition: 0.4s;
 }
+
 .li_nav {
     list-style: none;
 }
@@ -126,6 +129,15 @@ input[type="checkbox"] {
     font-size: 5em;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: block;
+    width: 100%;
+}
+
+#nav_ul {
+    margin-top: 10%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*-------------------------content home---------------------*/
@@ -135,12 +147,41 @@ main {
     height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
-#home_background {
-    background-image: url('../img/lille.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.home {
+
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+
+.zoom {
+    animation: scale 40s linear infinite;
+}
+
+@keyframes scale {
+    50% {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+/*-------------------------footer---------------------*/
+
+footer {
+    height: 50px;
+    background-color: rgba(47, 53, 66);
+    position: relative;
 }
