@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
-    overflow: hidden visible;
+    overflow-x: hidden;
 }
 
 a {
@@ -20,6 +20,28 @@ article {
     margin: auto;
 }
 
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.button-emergency {
+    background-color: #ff6b81;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button-emergency>a {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /*-------------------------loader scène-------------------*/
 
 #loader-wrapper {
@@ -28,7 +50,7 @@ article {
     height: 100%;
     width: 100%;
     background-color: black;
-    z-index: 1000;
+    /* z-index: 1000; */
     margin: auto;
     text-align: center;
 }
@@ -53,11 +75,10 @@ article {
 header {
     height: 70px;
     width: 100%;
-
     background-color: rgba(47, 53, 66, 0.5);
     position: absolute;
     box-shadow: 0 2px 2px rgba(47, 53, 66, 0.2);
-    z-index: 2;
+    z-index: 3;
 
 }
 
@@ -71,7 +92,7 @@ label {
     border-radius: 5px;
     position: absolute;
     margin-left: 90%;
-    z-index: 3;
+    z-index: 4;
 }
 
 #nav-bar {
@@ -125,7 +146,7 @@ input[type="checkbox"] {
     padding: 10px;
     transform: translateX(100%);
     transition: 0.4s;
-    z-index: 3;
+
 }
 
 #burger:checked~#nav_container {
@@ -163,6 +184,11 @@ input[type="checkbox"] {
     z-index: 2;
     position: absolute;
     margin-top: 80px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 20%, transparent 10%), radial-gradient(circle, rgba(0, 0, 0, 0.2) 20%, transparent 10%);
+    background-size: 20px 20px;
+    background-position: 0 0, 50px 50px;
+    padding: 10px;
+
 }
 
 #aside-right {
@@ -172,7 +198,7 @@ input[type="checkbox"] {
 #aside-right,
 #aside-left {
     position: absolute;
-    z-index: 4;
+    z-index: 3;
     bottom: 0;
     height: 70px;
     background-color: #ff6b81;
@@ -180,6 +206,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     writing-mode: vertical-lr;
 }
+
 
 /*-------------------------content home---------------------*/
 
@@ -189,7 +216,8 @@ input[type="checkbox"] {
     height: 100vh;
     margin-top: 0;
     overflow: hidden;
-    box-sizing: border-box;
+    margin: auto;
+
 }
 
 main {
@@ -201,19 +229,18 @@ main {
 
 .home {
     width: 100%;
-    top: 0;
-
+    height: auto;
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 0;
+
 
 }
 
 
 .zoom {
     animation: scale 40s linear infinite;
-    z-index: 0;
+
 
 }
 
@@ -225,6 +252,19 @@ main {
         -o-transform: scale(1.2);
         transform: scale(1.2);
     }
+}
+
+
+#about-me {
+    margin: auto;
+    text-align: center;
+
+}
+
+.owl-logo {
+    text-align: center;
+    width: 300px;
+
 }
 
 /*-------------------------footer---------------------*/
