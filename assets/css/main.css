@@ -3,12 +3,17 @@ body {
     padding: 0;
     position: relative;
     box-sizing: border-box;
-    overflow-x: hidden;
+     overflow-x: hidden;
+   /* overflow-y: hidden; */
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+article {
+    margin: auto;
 }
 
 /*-------------------------loader scène-------------------*/
@@ -44,6 +49,7 @@ a {
 header {
     height: 70px;
     width: 100%;
+
     background-color: rgba(47, 53, 66, 0.5);
     position: absolute;
     box-shadow: 0 2px 2px rgba(47, 53, 66, 0.2);
@@ -110,10 +116,12 @@ input[type="checkbox"] {
     margin: auto;
     text-align: center;
     height: 100vh;
+    width: 100%;
     background-color: rgba(47, 53, 66);
     padding: 10px;
     transform: translateX(100%);
     transition: 0.4s;
+    z-index: 3;
 }
 
 #burger:checked~#nav_container {
@@ -140,32 +148,65 @@ input[type="checkbox"] {
     margin-right: auto;
 }
 
+/*-------------------------Aside link---------------------*/
+#section-aside {
+    border: 2px solid white;
+    height: 90vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    margin-top:80px;
+}
+
+#aside-right {
+    margin-left: 98%;
+}
+
+#aside-right,
+#aside-left {
+    position: absolute;
+    z-index: 4;
+    bottom:0;
+    height: 70px;
+    background-color: #ff6b81;
+    padding: 10px;
+    border-radius: 5px;
+    writing-mode: vertical-lr;
+}
+
 /*-------------------------content home---------------------*/
 
 main {
     background-color: #57606f;
-    height: 100vh;
     margin-top: 0;
     margin-bottom: 0;
-    overflow: hidden;
-    box-sizing: border-box;
+    /* overflow-y: hidden; */
+    /*overflow-x: hidden; */
+
 }
 
 .home {
 
     width: 100%;
     height: auto;
-    top: 0;
+    top: -10%;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
+    z-index: 0;
+    /* overflow-y: hidden;
+    box-sizing: border-box; */
 }
 
 
 .zoom {
     animation: scale 40s linear infinite;
+    z-index: 0;
+    
 }
 
 @keyframes scale {
@@ -184,4 +225,5 @@ footer {
     height: 50px;
     background-color: rgba(47, 53, 66);
     position: relative;
+    ;
 }
