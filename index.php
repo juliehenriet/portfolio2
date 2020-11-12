@@ -5,15 +5,16 @@
         <img src="./assets/img/owl.png" alt="hiboux en vole" id="owl">
     </div>
 
-    <article class="main-article" id="main-article">
+    <article id="main-article">
 
-       <!-- <section id="section-aside">
-            <aside id="aside-left"><a href="contact.php/">Contact</a></aside>
-            <aside id="aside-right"><a href="contact.php/">Réalisation</a></aside>
-        </section> -->
+       <section id="section-aside">
+            <!-- <aside id="aside-left"><a href="contact.php/">Contact</a></aside>
+            <aside id="aside-right"><a href="contact.php/">Réalisation</a></aside> -->
+        </section>
+        <img src="./assets/img/lille.jpg" class="home zoom">
     </article> 
 
-        <img src="./assets/img/lille.jpg" class="home zoom">
+       
 
       
 
